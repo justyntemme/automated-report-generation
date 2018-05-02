@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+	</head>
+	<body>
+		<canvas id="myChart" width="800" height="400"></canvas>
+		<script>
+			var ctx = document.getElementById("myChart").getContext('2d');
+			var myChart =  new Chart(ctx, {
+				type: 'bar',
+				data: {
+					labels: [
+"domains.com",
+],
+
+					datasets: [{
+						label: '# of Votes',
+						data: [ 2 ],
+						backgroundColor: [
+							'rbga(255, 99, 132, 0.2)',
+						],
+						bordercolor: [
+							'rgba(255,99,132,1)',
+						],
+						borderWidth: 1
+					}]
+				},
+				options: {
+					scales: {
+						xAxes: [{
+							categoryPercentage: 1,
+							barThickness: 5,
+						}],
+						yAxes: [{
+							ticks: {
+								beginAtZero:true
+						}
+						}]
+					}
+				}
+			})
+		</script>
+		
