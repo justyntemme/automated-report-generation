@@ -1,11 +1,10 @@
 #!/usr/bin/env python
 
 import matplotlib.pyplot as plt
-import numpy as np
 import json
 import os
 
-#TODO: Create Gobal array of domains: Create Gobal array of  [site-speed:SEO:Best Practices]
+#TODO: Create global array of domains: Create global array of  [site-speed:SEO:Best Practices]
 domains = []
 score = []
 extra = []
